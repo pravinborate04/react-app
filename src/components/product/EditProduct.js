@@ -37,6 +37,7 @@ class EditProduct extends Component {
           productAmount: res.data.amount,
           productQuantity: res.data.quantity,
           productActive: res.data.active,
+          images: res.data.images,
         });
       })
       .catch((err) => {
@@ -73,6 +74,7 @@ class EditProduct extends Component {
           amount: this.state.productAmount,
           quantity: this.state.productQuantity,
           active: this.state.productActive,
+          images: this.state.images,
         };
 
         API({
