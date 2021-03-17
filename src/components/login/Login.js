@@ -82,7 +82,6 @@ class Login extends Component {
       )
         .then((res) => {
           console.log(res.data);
-          alert("You are successfully signed in...");
           const { from } = this.props.location.state || {
             from: { pathname: "/home" },
           };
